@@ -19,4 +19,11 @@ public class Calculator {
         else
             return 0;
     }
+
+    public int modulo(int x, int y) {
+        if (y != 0)
+            return x % y;
+        else
+            return 0;
+    }
 }

@@ -65,4 +65,23 @@ public class CalculatorTest {
             assertEquals(0, calc.divide(42, 0));
             assertEquals(0, calc.divide(0, 42));
         }
+
+    @Test
+    public void GivenTwoNonZeroIntegersWhenModuloThenReturnResult() {
+        Calculator calc = new Calculator();
+
+        // assert statements
+        assertEquals(1, calc.modulo(3, 2));
+        assertEquals(0, calc.modulo(42, 2));
+        assertEquals(-4, calc.modulo(-19, 5));
+    }
+
+    @Test
+    public void GivenAZeroIntegerWhenModuloThenReturnZero() {
+        Calculator calc = new Calculator();
+
+        // assert statements
+        assertEquals(0, calc.modulo(42, 0));
+        assertEquals(0, calc.modulo(0, 42));
+    }
 }
